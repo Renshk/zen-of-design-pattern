@@ -5,13 +5,13 @@ package com.company.section4;
  * I'm glad to share my knowledge with you all.
  */
 public class Director {
-	private Builder builder = new ConcreteProduct();
+	private Builder builder = new ConcreteBuilder();
 	
-	//¹¹½¨²»Í¬µÄ²úÆ·
+	//æ„å»ºä¸åŒçš„äº§å“
 	public Product getAProduct(){
 		builder.setPart();  
 		/*
-		 * ÉèÖÃ²»Í¬µÄÁã¼ş£¬²úÉú²»Í¬µÄ²úÆ·
+		 * è®¾ç½®ä¸åŒçš„é›¶ä»¶ï¼Œäº§ç”Ÿä¸åŒçš„äº§å“
 		 */
 		return builder.buildProduct();
 	}
